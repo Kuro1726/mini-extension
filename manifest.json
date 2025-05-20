@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "A basic Chrome extension.",
   "action": {
-    "default_popup": "./popup/popup.html"
+    "default_popup": "/popup/popup.html"
   },
   "permissions": ["storage"],
   "background": {
@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["./script/content.js"]
     }
   ]
 }
